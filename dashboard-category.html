@@ -232,6 +232,7 @@
                     <p><a href="dashboard-progetto.html">Active Project name</a> / Props</p>             
                     <div class="d-flex show-col">
                         <p>Show/Disable Column: </p>
+                        <li><input type="checkbox" value="hide" id="all" onchange="hide_show_table(this.id);">All</li>
                         <li><input type="checkbox" value="hide" id="thumb_col" onchange="hide_show_table(this.id);">Thumb</li>
                         <li><input type="checkbox" value="hide" id="type_col" onchange="hide_show_table(this.id);">Type</li>
                         <li><input type="checkbox" value="hide" id="design_col" onchange="hide_show_table(this.id);">Design</li>
@@ -245,27 +246,29 @@
                     <div class="card shadow mb-4">
                         
                         <div class="card-body">
-                            <div class="table-responsive">
+                           
                                 <table class=" table-bordered tb-work" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th class="table-head">File</th>
+                                            <th class="table-head">File Name</th>
                                             <th class="table-head" id="head_thumb_col">Thumb</th>
-                                            <th class="table-head" id="head_type_col">Type</th>
+                                            <th class="table-head" id="head_type_col">Rig status</th>
                                             <th class="table-head" id="head_design_col">Design</th>
                                             <th class="table-head" id="head_taround_col">T.Around</th>
                                             <th class="table-head" id="head_espr_col">Espr</th>
                                             <th class="table-head" id="head_gest_col">Gest</th>
                                             <th class="table-head" id="head_render_col">Render</th>
-                                            
+                                            <th class="table-head" id="head_artist_col">Artist Name</th>
                                             <th class="table-head" id="head_sync_col">Sync</th>
-                                            <th class="table-head" id="head_update_col">Update</th>
+                                            <th class="table-head" id="head_update_col"> Last Update</th>
+                                            <th class="table-head" id="head_startdate_col"> Start Date</th>
+                                            <th class="table-head" id="head_enddate_col"> End Date</th>
                                         </tr>
                                     </thead>
                                     
                                     <tbody>
                                         <tr>
-                                            <td><a href="dettaglio-lavorazione.html">1_wolf-s1.ma</a></td>
+                                            <td ><a href="dettaglio-lavorazione.html">1_wolf-s1.ma</a></td>
                                             <td class="thumb_col"><img src="img/thumb/dog-animation.png"/></td>
                                             <td class="type_col"><button class="btn" style="border:0">Rig</button></td>
 
@@ -274,8 +277,10 @@
                                             <td class="espr_col"><button class="btn on-hold">On Hold</button></td>
                                             <td class="gest_col"><button class="btn on-hold">On Hold</button></td>
                                             <td class="render_col"><button class="btn on-hold">On Hold</button></td>
-                                            
+                                            <td class="artist_col">Name artista</td>
                                             <td class="sync_col"><a href="#">Sync review</a></td>
+                                            <td>20/10/2021</td>
+                                            <td>20/10/2021</td>
                                             <td>20/10/2021</td>
                                         </tr>
 
@@ -289,8 +294,10 @@
                                             <td class="espr_col"><button class="btn in-progress">In Progress</button></td>
                                             <td class="gest_col"><button class="btn on-hold">On Hold</button></td>
                                             <td class="render_col"><button class="btn on-hold">On Hold</button></td>
-                                            
+                                            <td class="artist_col">Name artista</td>
                                             <td class="sync_col"><a href="#">Sync review</a></td>
+                                            <td>20/10/2021</td>
+                                            <td>20/10/2021</td>
                                             <td>20/10/2021</td>
                                         </tr>
 
@@ -304,8 +311,10 @@
                                             <td class="espr_col"><button class="btn on-hold">On Hold</button></td>
                                             <td class="gest_col"><button class="btn on-hold">On Hold</button></td>
                                             <td class="render_col"><button class="btn on-hold">On Hold</button></td>
-                                            
+                                            <td class="artist_col">Name artista</td>
                                             <td class="sync_col"><a href="#">Sync review</a></td>
+                                            <td>20/10/2021</td>
+                                            <td>20/10/2021</td>
                                             <td>20/10/2021</td>
                                         </tr>
 
@@ -319,8 +328,10 @@
                                             <td class="espr_col"><button class="btn on-hold">On Hold</button></td>
                                             <td class="gest_col"><button class="btn on-hold">On Hold</button></td>
                                             <td class="render_col"><button class="btn on-hold">On Hold</button></td>
-                                            
+                                            <td class="artist_col">Name artista</td>
                                             <td class="sync_col"><a href="#">Sync review</a></td>
+                                            <td>20/10/2021</td>
+                                            <td>20/10/2021</td>
                                             <td>20/10/2021</td>
                                         </tr>
 
@@ -334,8 +345,10 @@
                                             <td class="espr_col"><button class="btn in-progress">In Progress</button></td>
                                             <td class="gest_col"><button class="btn in-progress">In Progress</button></td>
                                             <td class="render_col"><button class="btn on-hold">On Hold</button></td>
-                                            
+                                            <td class="artist_col">Name artista</td>
                                             <td class="sync_col"><a href="#">Sync review</a></td>
+                                            <td>20/10/2021</td>
+                                            <td>20/10/2021</td>
                                             <td>20/10/2021</td>
                                         </tr>
 
@@ -350,7 +363,10 @@
                                             <td class="gest_col"><button class="btn approved">Approved</button></td>
                                             <td class="render_col"><button class="btn in-progress">In Progress</button></td>
                                             
+                                            <td class="artist_col">Name artista</td>
                                             <td class="sync_col"><a href="#">Sync review</a></td>
+                                            <td>20/10/2021</td>
+                                            <td>20/10/2021</td>
                                             <td>20/10/2021</td>
                                         </tr>
 
@@ -365,7 +381,10 @@
                                             <td class="gest_col"><button class="btn on-hold">On Hold</button></td>
                                             <td class="render_col"><button class="btn on-hold">On Hold</button></td>
                                             
+                                            <td class="artist_col">Name artista</td>
                                             <td class="sync_col"><a href="#">Sync review</a></td>
+                                            <td>20/10/2021</td>
+                                            <td>20/10/2021</td>
                                             <td>20/10/2021</td>
                                         </tr>
 
@@ -380,7 +399,10 @@
                                             <td class="gest_col"><button class="btn on-hold">On Hold</button></td>
                                             <td class="render_col"><button class="btn on-hold">On Hold</button></td>
                                             
+                                            <td class="artist_col">Name artista</td>
                                             <td class="sync_col"><a href="#">Sync review</a></td>
+                                            <td>20/10/2021</td>
+                                            <td>20/10/2021</td>
                                             <td>20/10/2021</td>
                                         </tr>
 
@@ -395,7 +417,10 @@
                                             <td class="gest_col"><button class="btn on-hold">On Hold</button></td>
                                             <td class="render_col"><button class="btn on-hold">On Hold</button></td>
                                             
+                                            <td class="artist_col">Name artista</td>
                                             <td class="sync_col"><a href="#">Sync review</a></td>
+                                            <td>20/10/2021</td>
+                                            <td>20/10/2021</td>
                                             <td>20/10/2021</td>
                                         </tr>
 
@@ -410,7 +435,10 @@
                                             <td class="gest_col"><button class="btn on-hold">On Hold</button></td>
                                             <td class="render_col"><button class="btn on-hold">On Hold</button></td>
                                             
+                                            <td class="artist_col">Name artista</td>
                                             <td class="sync_col"><a href="#">Sync review</a></td>
+                                            <td>20/10/2021</td>
+                                            <td>20/10/2021</td>
                                             <td>20/10/2021</td>
                                         </tr>
                             
@@ -420,7 +448,7 @@
                                         
                                     </tbody>
                                 </table>
-                            </div>
+                       
                         </div>
                     </div>
                         
