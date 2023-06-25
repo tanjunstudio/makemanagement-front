@@ -15,7 +15,7 @@ button {
 }
 
 button:hover {
-  background-color: #d5e3ff;
+  background-color: #ffedd5;
 }
 
 button.active {
@@ -23,7 +23,9 @@ button.active {
 }
 
 .active {
-  background-color: white;
+  background: lightgrey;
+  color: #3a3b45 !important;
+  font-weight: 700 !important;
 }
 
 .content {
@@ -45,3 +47,4 @@ button.active {
 .panel {
   display: none;
 }
+
