@@ -29,92 +29,125 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion sx_nav" id="accordionSidebar">
-
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-
-                <div class="sidebar-brand-text mx-3"><img src="img/mm.png" style="max-width:80px" /></div>
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark sx_nav" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#!">
+              <div class="sidebar-brand-text mx-3">
+                <img src="img/mm.png"" style=" max-width:80px" />
+              </div>
             </a>
-
+      
             <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
+            <hr class="sidebar-divider my-0" />
+      
             <!-- Nav Item - Dashboard -->
-
-
+      
             <!-- Divider -->
-            <hr class="sidebar-divider">
-
+            <hr class="sidebar-divider" />
+      
             <!-- Heading -->
-            <div class="sidebar-heading">
-                Project Name
-            </div>
-
+            <div class="sidebar-heading">Project Name</div>
+      
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse2D"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span class="label_color">2D</span>
-                </a>
-                <div id="collapse2D" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-grey py-2 collapse-inner rounded">
-
-
-                        <a class="collapse-item label_color border-collapse" href="#!">Character</a>
-                        <a class="collapse-item label_color border-collapse" href="#!">Enviroment</a>
-                        <a class="collapse-item label_color border-collapse" href="dashboard-category.html">Prop</a>
-                        <a class="collapse-item label_color border-collapse" href="#!">VFX</a>
-                    </div>
+              <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse2D" aria-expanded="true"
+                aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-cog"></i>
+                <span class="label_color">2D</span>
+              </a>
+              <div id="collapse2D" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-grey py-2 collapse-inner rounded">
+                  <a class="collapse-item label_color border-collapse" href="dashboard-category.html">All</a>
+                  <a class="collapse-item label_color border-collapse" href="#!">Character</a>
+                  <a class="collapse-item label_color border-collapse" href="#!">Enviroment</a>
+                  <a class="collapse-item label_color border-collapse" href="#!">Prop</a>
+                  <a class="collapse-item label_color border-collapse" href="#!">VFX</a>
+                  <a class="collapse-item label_color border-collapse" style="padding-left: 9px; padding-right: 9px"
+                    href="#!">Matte painting</a>
                 </div>
-
+              </div>
             </li>
-
-
-
       
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item" id="accordionSidebarthree">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse3D"
-                    aria-expanded="true" aria-controls="collapseThree">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span class="label_color">3D</span>
-                </a>
-                <div id="collapse3D" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebarthree">
-                    <div class="bg-grey py-2 collapse-inner rounded">
-
-                        <a class="collapse-item label_color border-collapse accordion"  href="modelling-page.html">Modelling</a>
-                        <div class="panel">
-                            <a class="collapse-item label_color border-collapse" href="#!">Character</a>
-                            <a class="collapse-item label_color border-collapse" href="#!">Enviroment</a>
-                            <a class="collapse-item label_color border-collapse" href="dashboard-category.html">Prop</a>
-                            <a class="collapse-item label_color border-collapse" href="#!">VFX</a>
-                          </div>
-                        <a class="collapse-item label_color border-collapse accordion" href="#!">Texturing <br>& sharing</a>
-                        <div class="panel">
-                            <a class="collapse-item label_color border-collapse" href="#!">Character</a>
-                            <a class="collapse-item label_color border-collapse" href="#!">Enviroment</a>
-                            <a class="collapse-item label_color border-collapse" href="dashboard-category.html">Prop</a>
-                            <a class="collapse-item label_color border-collapse" href="#!">VFX</a>
-                          </div>
-                        <a class="collapse-item label_color border-collapse accordion" href="#!">Rigging</a>
-                        <div class="panel">
-                            <a class="collapse-item label_color border-collapse" href="#!">Character</a>
-                            <a class="collapse-item label_color border-collapse" href="#!">Enviroment</a>
-                            <a class="collapse-item label_color border-collapse" href="dashboard-category.html">Prop</a>
-                            <a class="collapse-item label_color border-collapse" href="#!">VFX</a>
-                          </div>
-                        <a class="collapse-item label_color border-collapse" href="#!">Layout</a>
-                        <a class="collapse-item label_color border-collapse" href="#!">Animation</a>
-                        <a class="collapse-item label_color border-collapse" href="#!">Lighting</a>
-                        <a class="collapse-item label_color border-collapse" href="#!">Compositing</a>
-                   
-                    </div>
+              <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse3D" aria-expanded="true"
+                aria-controls="collapseThree">
+                <i class="fas fa-fw fa-cog"></i>
+                <span class="label_color">3D</span>
+              </a>
+              <div id="collapse3D" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebarthree">
+                <div class="bg-grey py-2 collapse-inner rounded">
+                  <a class="collapse-item label_color border-collapse accordion main-label" href="#!">Modelling</a>
+                  <div class="panel">
+                    <a class="collapse-item label_color border-collapse" href="dashboard-table-mod.html">All</a>
+                    <a class="collapse-item label_color border-collapse" href="#!">Character</a>
+                    <a class="collapse-item label_color border-collapse" href="#!">Enviroment</a>
+                    <a class="collapse-item label_color border-collapse" href="#!">Prop</a>
+                    <a class="collapse-item label_color border-collapse" href="#!">VFX</a>
+                  </div>
+                  <a class="collapse-item label_color border-collapse accordion main-label" href="#!">Texturing <br />&
+                    sharing</a>
+                  <div class="panel">
+                    <a class="collapse-item label_color border-collapse" href="dashboard-table-tex.html">All</a>
+                    <a class="collapse-item label_color border-collapse" href="#!">Character</a>
+                    <a class="collapse-item label_color border-collapse" href="#!">Enviroment</a>
+                    <a class="collapse-item label_color border-collapse" href="#!">Prop</a>
+                    <a class="collapse-item label_color border-collapse" href="#!">VFX</a>
+                  </div>
+                  <a class="collapse-item label_color border-collapse accordion main-label" href="#!">Rigging</a>
+                  <div class="panel">
+                    <a class="collapse-item label_color border-collapse" href="dashboard-table-rig.html">All</a>
+                    <a class="collapse-item label_color border-collapse" href="#!">Character</a>
+                    <a class="collapse-item label_color border-collapse" href="#!">Enviroment</a>
+                    <a class="collapse-item label_color border-collapse" href="#!">Prop</a>
+                    <a class="collapse-item label_color border-collapse" href="#!">VFX</a>
+                  </div>
                 </div>
-            
+              </div>
             </li>
-
-        </ul>
+      
+            <li class="nav-item" id="accordionShot">
+              <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseShot" aria-expanded="true"
+                aria-controls="collapseShot">
+                <i class="fas fa-fw fa-cog"></i>
+                <span class="label_color">Shot</span>
+              </a>
+              <div id="collapseShot" class="collapse" aria-labelledby="headingShot" data-parent="#accordionShot">
+                <div class="bg-grey py-2 collapse-inner rounded">
+                  <a class="collapse-item label_color border-collapse accordion" href="#!">Layout</a>
+                  <a class="collapse-item label_color border-collapse accordion" href="#!">Animation
+                  </a>
+                  <a class="collapse-item label_color border-collapse accordion" href="#!">Lighing
+                  </a>
+                  <a class="collapse-item label_color border-collapse accordion" href="#!"
+                    style="padding-left: 9px; padding-right: 9px">Compositing
+                  </a>
+                </div>
+              </div>
+            </li>
+      
+            <div style="position: absolute; top: 80%">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-fw fa-cog"></i>
+                  <span class="label_color">Animatic</span>
+                </a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-fw fa-cog"></i>
+                  <span class="label_color">Sound</span>
+                </a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-fw fa-cog"></i>
+                  <span class="label_color">Editorial</span>
+                </a>
+              </li>
+            </div>
+          </ul>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
