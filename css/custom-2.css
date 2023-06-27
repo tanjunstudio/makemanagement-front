@@ -48,3 +48,8 @@ button.active {
   display: none;
 }
 
+.main-label {
+  background: lightgrey;
+  color: #3a3b45 !important;
+  font-weight: 700 !important;
+}
