@@ -56,11 +56,11 @@
         </a>
         <div id="collapse2D" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-grey py-2 collapse-inner rounded">
-            <a class="collapse-item label_color border-collapse 2d active" href="dashboard-category.html">All</a>
+            <a class="collapse-item label_color border-collapse 2d" href="dashboard-category.html">All</a>
             <a class="collapse-item label_color border-collapse 2d" href="dashboard-character.html">Character</a>
             <a class="collapse-item label_color border-collapse 2d" href="dashboard-environment.html">Environment</a>
             <a class="collapse-item label_color border-collapse 2d" href="dashboard-prop.html">Prop</a>
-            <a class="collapse-item label_color border-collapse 2d" href="dashboard-vfx.html">VFX</a>
+            <a class="collapse-item label_color border-collapse 2d active" href="dashboard-vfx.html">VFX</a>
             <a class="collapse-item label_color border-collapse" style="padding-left: 9px; padding-right: 9px"
               href="#!">Matte painting</a>
           </div>
@@ -228,78 +228,53 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-          <p>
-            <a href="dashboard-progetto.html">Active Project name</a> /
-          </p>
+          <p><a href="dashboard-progetto.html">Active Project name</a> /</p>
 
           <div class="dropdown">
             <button onclick="toggleDropdown()" class="dropbtn">Filtri</button>
             <div id="myDropdown" class="dropdown-content">
-              <div style=" display: grid; ">
+              <div style="display: grid">
                 <label>
-                  <input type="checkbox" value="hide" id="all" class="check-box" onchange="hide_show_table(this.id);" />All
+                  <input type="checkbox" value="hide" id="all" class="check-box"
+                    onchange="hide_show_table(this.id);" />All
                 </label>
                 <label>
-                  <input type="checkbox" value="hide" id="thumb_col"  class="check-box" onchange="hide_show_table(this.id);" />Thumb
+                  <input type="checkbox" value="hide" id="thumb_col" class="check-box"
+                    onchange="hide_show_table(this.id);" />Thumb
                 </label>
                 <label>
-                  <input type="checkbox" value="hide" id="type_col" class="check-box" onchange="hide_show_table(this.id);" />Type
+                  <input type="checkbox" value="hide" id="type_col" class="check-box"
+                    onchange="hide_show_table(this.id);" />Type
                 </label>
                 <label>
-                  <input type="checkbox" value="hide" id="design_col" class="check-box" onchange="hide_show_table(this.id);" />Design
+                  <input type="checkbox" value="hide" id="design_col" class="check-box"
+                    onchange="hide_show_table(this.id);" />Design
                 </label>
                 <label>
-                  <input type="checkbox" value="hide" id="taround_col" class="check-box" onchange="hide_show_table(this.id);" />T.Around
+                  <input type="checkbox" value="hide" id="taround_col" class="check-box"
+                    onchange="hide_show_table(this.id);" />T.Around
                 </label>
                 <label>
-                  <input type="checkbox" value="hide" id="espr_col" class="check-box" onchange="hide_show_table(this.id);" />Espr
+                  <input type="checkbox" value="hide" id="espr_col" class="check-box"
+                    onchange="hide_show_table(this.id);" />Espr
                 </label>
                 <label>
-                  <input type="checkbox" value="hide" id="gest_col" class="check-box" onchange="hide_show_table(this.id);" />Gest
+                  <input type="checkbox" value="hide" id="gest_col" class="check-box"
+                    onchange="hide_show_table(this.id);" />Gest
                 </label>
                 <label>
-                  <input type="checkbox" value="hide" id="render_col" class="check-box" onchange="hide_show_table(this.id);" />Render
+                  <input type="checkbox" value="hide" id="render_col" class="check-box"
+                    onchange="hide_show_table(this.id);" />Render
                 </label>
                 <label>
-                  <input type="checkbox" value="hide" id="sync_col" class="check-box" onchange="hide_show_table(this.id);" />Sync
+                  <input type="checkbox" value="hide" id="sync_col" class="check-box"
+                    onchange="hide_show_table(this.id);" />Sync
                 </label>
                 <!-- Aggiungi altre opzioni qui -->
-
               </div>
             </div>
           </div>
 
-
-          <!-- <div class="d-flex show-col">
-              <p>Show/Disable Column:</p>
-              <li>
-                <input type="checkbox" value="hide" id="all" onchange="hide_show_table(this.id);" />All
-              </li>
-              <li>
-                <input type="checkbox" value="hide" id="thumb_col" onchange="hide_show_table(this.id);" />Thumb
-              </li>
-              <li>
-                <input type="checkbox" value="hide" id="type_col" onchange="hide_show_table(this.id);" />Type
-              </li>
-              <li>
-                <input type="checkbox" value="hide" id="design_col" onchange="hide_show_table(this.id);" />Design
-              </li>
-              <li>
-                <input type="checkbox" value="hide" id="taround_col" onchange="hide_show_table(this.id);" />T.Around
-              </li>
-              <li>
-                <input type="checkbox" value="hide" id="espr_col" onchange="hide_show_table(this.id);" />Espr
-              </li>
-              <li>
-                <input type="checkbox" value="hide" id="gest_col" onchange="hide_show_table(this.id);" />Gest
-              </li>
-              <li>
-                <input type="checkbox" value="hide" id="render_col" onchange="hide_show_table(this.id);" />Render
-              </li>
-              <li>
-                <input type="checkbox" value="hide" id="sync_col" onchange="hide_show_table(this.id);" />Sync
-              </li>
-            </div> -->
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-body">
@@ -310,9 +285,9 @@
                     <th class="table-head" id="head_thumb_col">Thumb</th>
                     <th class="table-head" id="head_type_col">Rig status</th>
                     <th class="table-head" id="head_design_col">Design</th>
-                    <th class="table-head" id="head_taround_col">T.Around</th>
-                    <th class="table-head" id="head_espr_col">Espr</th>
-                    <th class="table-head" id="head_gest_col">Gest</th>
+                    <!-- <th class="table-head" id="head_taround_col">T.Around</th> -->
+                    <!-- <th class="table-head" id="head_espr_col">Espr</th>
+                    <th class="table-head" id="head_gest_col">Gest</th> -->
                     <th class="table-head" id="head_render_col">Render</th>
                     <th class="table-head" id="head_artist_col">
                       Artist Name
@@ -331,7 +306,7 @@
                 <tbody>
                   <tr>
                     <td>
-                      <a href="#">1_wolf-s1.ma</a>
+                      <a href="dettaglio-vfx.html">1_wolf-s1.ma</a>
                     </td>
                     <td class="thumb_col">
                       <img src="img/thumb/dog-animation.png" />
@@ -343,82 +318,15 @@
                     <td class="design_col">
                       <button class="btn approved">Approved</button>
                     </td>
-                    <td class="taround_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="espr_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="gest_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
+                  
+
                     <td class="render_col">
                       <button class="btn on-hold">On Hold</button>
                     </td>
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                  </tr>
-
-                  <tr>
-                    <td><a href="#">1_dog.ma</a></td>
-                    <td class="thumb_col">
-                      <img src="img/thumb/dog-animation.png" />
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
                     </td>
-                    <td class="type_col">
-                      <button class="btn" style="border: 0">Rig</button>
-                    </td>
-
-                    <td class="design_col">
-                      <button class="btn for-review">For Review</button>
-                    </td>
-                    <td class="taround_col">
-                      <button class="btn in-progress">In Progress</button>
-                    </td>
-                    <td class="espr_col">
-                      <button class="btn in-progress">In Progress</button>
-                    </td>
-                    <td class="gest_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="render_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                  </tr>
-
-                  <tr>
-                    <td><a href="#">2_dog.ma</a></td>
-                    <td class="thumb_col">
-                      <img src="img/thumb/dog-animation.png" />
-                    </td>
-                    <td class="type_col">
-                      <button class="btn" style="border: 0">Rig</button>
-                    </td>
-
-                    <td class="design_col">
-                      <button class="btn for-review">For Review</button>
-                    </td>
-                    <td class="taround_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="espr_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="gest_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="render_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
                     <td>20/10/2021</td>
                     <td>20/10/2021</td>
                     <td>20/10/2021</td>
@@ -426,39 +334,8 @@
 
                   <tr>
                     <td>
-                      <a href="#">12_dog.ma</a>
+                      <a href="dettaglio-vfx.html">1_wolf-s1.ma</a>
                     </td>
-                    <td class="thumb_col">
-                      <img src="img/thumb/dog-animation.png" />
-                    </td>
-                    <td class="type_col">
-                      <button class="btn" style="border: 0">NO Rig</button>
-                    </td>
-
-                    <td class="design_col">
-                      <button class="btn for-review">For Review</button>
-                    </td>
-                    <td class="taround_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="espr_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="gest_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="render_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                  </tr>
-
-                  <tr>
-                    <td><a href="#">1_dog.ma</a></td>
                     <td class="thumb_col">
                       <img src="img/thumb/dog-animation.png" />
                     </td>
@@ -467,93 +344,26 @@
                     </td>
 
                     <td class="design_col">
-                      <button class="btn for-review">For Review</button>
+                      <button class="btn approved">Approved</button>
                     </td>
-                    <td class="taround_col">
-                      <button class="btn in-progress">In Progress</button>
-                    </td>
-                    <td class="espr_col">
-                      <button class="btn in-progress">In Progress</button>
-                    </td>
-                    <td class="gest_col">
-                      <button class="btn in-progress">In Progress</button>
-                    </td>
+                  
+
                     <td class="render_col">
                       <button class="btn on-hold">On Hold</button>
                     </td>
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
                     <td>20/10/2021</td>
                     <td>20/10/2021</td>
                     <td>20/10/2021</td>
                   </tr>
 
                   <tr>
-                    <td><a href="#">1_dog.ma</a></td>
-                    <td class="thumb_col">
-                      <img src="img/thumb/dog-animation.png" />
+                    <td>
+                      <a href="dettaglio-vfx.html">1_wolf-s1.ma</a>
                     </td>
-                    <td class="type_col">
-                      <button class="btn" style="border: 0">NO Rig</button>
-                    </td>
-
-                    <td class="design_col">
-                      <button class="btn approved">Approved</button>
-                    </td>
-                    <td class="taround_col">
-                      <button class="btn approved">Approved</button>
-                    </td>
-                    <td class="espr_col">
-                      <button class="btn approved">Approved</button>
-                    </td>
-                    <td class="gest_col">
-                      <button class="btn approved">Approved</button>
-                    </td>
-                    <td class="render_col">
-                      <button class="btn in-progress">In Progress</button>
-                    </td>
-
-                    <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                  </tr>
-
-                  <tr>
-                    <td><a href="#">1_dog.ma</a></td>
-                    <td class="thumb_col">
-                      <img src="img/thumb/dog-animation.png" />
-                    </td>
-                    <td class="type_col">
-                      <button class="btn" style="border: 0">NO Rig</button>
-                    </td>
-
-                    <td class="design_col">
-                      <button class="btn for-review">For Review</button>
-                    </td>
-                    <td class="taround_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="espr_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="gest_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="render_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-
-                    <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                  </tr>
-
-                  <tr>
-                    <td><a href="#">1_dog.ma</a></td>
                     <td class="thumb_col">
                       <img src="img/thumb/dog-animation.png" />
                     </td>
@@ -562,30 +372,26 @@
                     </td>
 
                     <td class="design_col">
-                      <button class="btn for-review">For Review</button>
+                      <button class="btn approved">Approved</button>
                     </td>
-                    <td class="taround_col">
-                      <button class="btn for-approval">For Approval</button>
-                    </td>
-                    <td class="espr_col">
-                      <button class="btn for-approval">For Approval</button>
-                    </td>
-                    <td class="gest_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
+                  
+
                     <td class="render_col">
                       <button class="btn on-hold">On Hold</button>
                     </td>
-
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
                     <td>20/10/2021</td>
                     <td>20/10/2021</td>
                     <td>20/10/2021</td>
                   </tr>
 
                   <tr>
-                    <td><a href="#">1_dog.ma</a></td>
+                    <td>
+                      <a href="dettaglio-vfx.html">1_wolf-s1.ma</a>
+                    </td>
                     <td class="thumb_col">
                       <img src="img/thumb/dog-animation.png" />
                     </td>
@@ -594,30 +400,25 @@
                     </td>
 
                     <td class="design_col">
-                      <button class="btn for-review">For Review</button>
+                      <button class="btn approved">Approved</button>
                     </td>
-                    <td class="taround_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="espr_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="gest_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
+                  
+
                     <td class="render_col">
                       <button class="btn on-hold">On Hold</button>
                     </td>
-
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
                     <td>20/10/2021</td>
                     <td>20/10/2021</td>
                     <td>20/10/2021</td>
                   </tr>
-
                   <tr>
-                    <td><a href="#">1_dog.ma</a></td>
+                    <td>
+                      <a href="dettaglio-vfx.html">1_wolf-s1.ma</a>
+                    </td>
                     <td class="thumb_col">
                       <img src="img/thumb/dog-animation.png" />
                     </td>
@@ -626,23 +427,156 @@
                     </td>
 
                     <td class="design_col">
-                      <button class="btn for-review">For Review</button>
+                      <button class="btn approved">Approved</button>
                     </td>
-                    <td class="taround_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="espr_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
-                    <td class="gest_col">
-                      <button class="btn on-hold">On Hold</button>
-                    </td>
+                  
+
                     <td class="render_col">
                       <button class="btn on-hold">On Hold</button>
                     </td>
-
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td>20/10/2021</td>
+                    <td>20/10/2021</td>
+                    <td>20/10/2021</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <a href="dettaglio-vfx.html">1_wolf-s1.ma</a>
+                    </td>
+                    <td class="thumb_col">
+                      <img src="img/thumb/dog-animation.png" />
+                    </td>
+                    <td class="type_col">
+                      <button class="btn" style="border: 0">Rig</button>
+                    </td>
+
+                    <td class="design_col">
+                      <button class="btn approved">Approved</button>
+                    </td>
+                  
+
+                    <td class="render_col">
+                      <button class="btn on-hold">On Hold</button>
+                    </td>
+                    <td class="artist_col">Name artista</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td>20/10/2021</td>
+                    <td>20/10/2021</td>
+                    <td>20/10/2021</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <a href="dettaglio-vfx.html">1_wolf-s1.ma</a>
+                    </td>
+                    <td class="thumb_col">
+                      <img src="img/thumb/dog-animation.png" />
+                    </td>
+                    <td class="type_col">
+                      <button class="btn" style="border: 0">Rig</button>
+                    </td>
+
+                    <td class="design_col">
+                      <button class="btn approved">Approved</button>
+                    </td>
+                  
+
+                    <td class="render_col">
+                      <button class="btn on-hold">On Hold</button>
+                    </td>
+                    <td class="artist_col">Name artista</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td>20/10/2021</td>
+                    <td>20/10/2021</td>
+                    <td>20/10/2021</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="dettaglio-vfx.html">1_wolf-s1.ma</a>
+                    </td>
+                    <td class="thumb_col">
+                      <img src="img/thumb/dog-animation.png" />
+                    </td>
+                    <td class="type_col">
+                      <button class="btn" style="border: 0">Rig</button>
+                    </td>
+
+                    <td class="design_col">
+                      <button class="btn approved">Approved</button>
+                    </td>
+                  
+
+                    <td class="render_col">
+                      <button class="btn on-hold">On Hold</button>
+                    </td>
+                    <td class="artist_col">Name artista</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td>20/10/2021</td>
+                    <td>20/10/2021</td>
+                    <td>20/10/2021</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <a href="dettaglio-vfx.html">1_wolf-s1.ma</a>
+                    </td>
+                    <td class="thumb_col">
+                      <img src="img/thumb/dog-animation.png" />
+                    </td>
+                    <td class="type_col">
+                      <button class="btn" style="border: 0">Rig</button>
+                    </td>
+
+                    <td class="design_col">
+                      <button class="btn approved">Approved</button>
+                    </td>
+                  
+
+                    <td class="render_col">
+                      <button class="btn on-hold">On Hold</button>
+                    </td>
+                    <td class="artist_col">Name artista</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td>20/10/2021</td>
+                    <td>20/10/2021</td>
+                    <td>20/10/2021</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <a href="dettaglio-vfx.html">1_wolf-s1.ma</a>
+                    </td>
+                    <td class="thumb_col">
+                      <img src="img/thumb/dog-animation.png" />
+                    </td>
+                    <td class="type_col">
+                      <button class="btn" style="border: 0">Rig</button>
+                    </td>
+
+                    <td class="design_col">
+                      <button class="btn approved">Approved</button>
+                    </td>
+                  
+
+                    <td class="render_col">
+                      <button class="btn on-hold">On Hold</button>
+                    </td>
+                    <td class="artist_col">Name artista</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
                     <td>20/10/2021</td>
                     <td>20/10/2021</td>
                     <td>20/10/2021</td>
@@ -725,10 +659,8 @@
   <script src="js/demo/chart-pie-demo.js"></script>
   <script src="js/demo/datatables-demo.js"></script>
 
-
   <script src="js/side-menu.js"></script>
   <script src="js/filter-list.js"></script>
-
 </body>
 
 </html>

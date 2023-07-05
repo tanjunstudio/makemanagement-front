@@ -18,7 +18,7 @@ cat.addEventListener('change', (event) => {
     const sub_c = document.getElementById('sub-cat');
     //sub_c.removeChild(txt);
     if (val == '1') {
-        const subarr = ["Character", "Enviroment", "Prop", "VFX"];
+        const subarr = ["Character", "Environment", "Prop", "VFX"];
         const txt =  document.createElement('p');
         const sel = document.createElement('select');
         sel.setAttribute = "id";
@@ -75,7 +75,7 @@ cat.addEventListener('change', (event) => {
     }
 
     if (val == '2') {
-        const subarr = ["Character", "Enviroment", "Prop", "VFX"]
+        const subarr = ["Character", "Environment", "Prop", "VFX"]
         const stagearr = ["Design", "Turn Around", "Expression", "Render"]
 
         //costruzione SELECT Sub Category

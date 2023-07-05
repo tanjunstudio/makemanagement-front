@@ -5,7 +5,7 @@
   display: flex;
 }
 
-button {
+.tab-button {
   border: 1px solid darkgrey;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -14,11 +14,11 @@ button {
   color: #232c3d;
 }
 
-button:hover {
+.tab-button:hover {
   background-color: #ffedd5;
 }
 
-button.active {
+.tab-button.active {
   background-color: white;
 }
 
@@ -52,4 +52,29 @@ button.active {
   background: lightgrey;
   color: #3a3b45 !important;
   font-weight: 700 !important;
+}
+
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropbtn {
+  line-height: 1.5;
+    border-radius: 0.35rem;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.check-box{
+  margin-right: 0.5rem;
+    font-size: 18px;
 }
