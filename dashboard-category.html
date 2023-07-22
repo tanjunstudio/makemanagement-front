@@ -113,7 +113,7 @@
         </a>
         <div id="collapseShot" class="collapse" aria-labelledby="headingShot" data-parent="#accordionShot">
           <div class="bg-grey py-2 collapse-inner rounded">
-            <a class="collapse-item label_color border-collapse accordion"  >Layout</a>
+            <a class="collapse-item label_color border-collapse accordion" href="layout-shot-page.html" >Layout</a>
             <a class="collapse-item label_color border-collapse accordion"  >Animation
             </a>
             <a class="collapse-item label_color border-collapse accordion"  >Lighing
@@ -229,7 +229,9 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
           <p>
-            <a href="dashboard-progetto.html">Active Project name</a> /
+            <a href="dashboard-progetto.html">Active Project name</a>
+             /
+             <a href="dashboard-category.html">All</a>
           </p>
 
           <div class="dropdown">
@@ -262,6 +264,21 @@
                 </label>
                 <label>
                   <input type="checkbox" value="hide" id="sync_col" class="check-box" onchange="hide_show_table(this.id);" />Sync
+                </label>
+                <label>
+                  <input type="checkbox" value="hide" id="artist_col" class="check-box" onchange="hide_show_table(this.id);" />Artist Name
+                </label>
+                <label>
+                  <input type="checkbox" value="hide" id="lastUD_col" class="check-box" onchange="hide_show_table(this.id);" />Last Update
+                </label>
+                <label>
+                  <input type="checkbox" value="hide" id="startD_col" class="check-box" onchange="hide_show_table(this.id);" />Start Date
+                </label>
+                <label>
+                  <input type="checkbox" value="hide" id="endtD_col" class="check-box" onchange="hide_show_table(this.id);" />End date
+                </label>
+                <label>
+                  <input type="checkbox" value="hide" id="category_col" class="check-box" onchange="hide_show_table(this.id);" />Category
                 </label>
                 <!-- Aggiungi altre opzioni qui -->
 
@@ -314,17 +331,12 @@
                     <th class="table-head" id="head_espr_col">Espr</th>
                     <th class="table-head" id="head_gest_col">Gest</th>
                     <th class="table-head" id="head_render_col">Render</th>
-                    <th class="table-head" id="head_artist_col">
-                      Artist Name
-                    </th>
+                    <th class="table-head" id="head_artist_col">Artist Name</th>
                     <th class="table-head" id="head_sync_col">Sync</th>
-                    <th class="table-head" id="head_update_col">
-                      Last Update
-                    </th>
-                    <th class="table-head" id="head_startdate_col">
-                      Start Date
-                    </th>
-                    <th class="table-head" id="head_enddate_col">End Date</th>
+                    <th class="table-head" id="head_lastUD_col">Last Update</th>
+                    <th class="table-head" id="head_startD_col">Start Date</th>
+                    <th class="table-head" id="head_endtD_col">End Date</th>
+                    <th class="table-head" id="head_category_col">Category</th>
                   </tr>
                 </thead>
 
@@ -339,7 +351,6 @@
                     <td class="type_col">
                       <button class="btn" style="border: 0">Rig</button>
                     </td>
-
                     <td class="design_col">
                       <button class="btn approved">Approved</button>
                     </td>
@@ -356,10 +367,13 @@
                       <button class="btn on-hold">On Hold</button>
                     </td>
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td class="lastUD_col">20/10/2021</td>
+                    <td class="startD_col">20/10/2021</td>
+                    <td class="endtD_col">20/10/2021</td>
+                    <td class="category_col">Character</td>
                   </tr>
 
                   <tr>
@@ -370,7 +384,6 @@
                     <td class="type_col">
                       <button class="btn" style="border: 0">Rig</button>
                     </td>
-
                     <td class="design_col">
                       <button class="btn for-review">For Review</button>
                     </td>
@@ -387,10 +400,13 @@
                       <button class="btn on-hold">On Hold</button>
                     </td>
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td class="lastUD_col">20/10/2021</td>
+                    <td class="startD_col">20/10/2021</td>
+                    <td class="endtD_col">20/10/2021</td>
+                    <td class="category_col">Environment</td>
                   </tr>
 
                   <tr>
@@ -401,7 +417,6 @@
                     <td class="type_col">
                       <button class="btn" style="border: 0">Rig</button>
                     </td>
-
                     <td class="design_col">
                       <button class="btn for-review">For Review</button>
                     </td>
@@ -418,10 +433,13 @@
                       <button class="btn on-hold">On Hold</button>
                     </td>
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td class="lastUD_col">20/10/2021</td>
+                    <td class="startD_col">20/10/2021</td>
+                    <td class="endtD_col">20/10/2021</td>
+                    <td class="category_col">Prop</td>
                   </tr>
 
                   <tr>
@@ -434,7 +452,6 @@
                     <td class="type_col">
                       <button class="btn" style="border: 0">NO Rig</button>
                     </td>
-
                     <td class="design_col">
                       <button class="btn for-review">For Review</button>
                     </td>
@@ -451,10 +468,13 @@
                       <button class="btn on-hold">On Hold</button>
                     </td>
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td class="lastUD_col">20/10/2021</td>
+                    <td class="startD_col">20/10/2021</td>
+                    <td class="endtD_col">20/10/2021</td>
+                    <td class="category_col">VFX</td>
                   </tr>
 
                   <tr>
@@ -465,7 +485,6 @@
                     <td class="type_col">
                       <button class="btn" style="border: 0">Rig</button>
                     </td>
-
                     <td class="design_col">
                       <button class="btn for-review">For Review</button>
                     </td>
@@ -482,10 +501,13 @@
                       <button class="btn on-hold">On Hold</button>
                     </td>
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td class="lastUD_col">20/10/2021</td>
+                    <td class="startD_col">20/10/2021</td>
+                    <td class="endtD_col">20/10/2021</td>
+                    <td class="category_col">Character</td>
                   </tr>
 
                   <tr>
@@ -496,7 +518,6 @@
                     <td class="type_col">
                       <button class="btn" style="border: 0">NO Rig</button>
                     </td>
-
                     <td class="design_col">
                       <button class="btn approved">Approved</button>
                     </td>
@@ -512,12 +533,14 @@
                     <td class="render_col">
                       <button class="btn in-progress">In Progress</button>
                     </td>
-
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td class="lastUD_col">20/10/2021</td>
+                    <td class="startD_col">20/10/2021</td>
+                    <td class="endtD_col">20/10/2021</td>
+                    <td class="category_col">Environment</td>
                   </tr>
 
                   <tr>
@@ -528,7 +551,6 @@
                     <td class="type_col">
                       <button class="btn" style="border: 0">NO Rig</button>
                     </td>
-
                     <td class="design_col">
                       <button class="btn for-review">For Review</button>
                     </td>
@@ -544,12 +566,14 @@
                     <td class="render_col">
                       <button class="btn on-hold">On Hold</button>
                     </td>
-
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td class="lastUD_col">20/10/2021</td>
+                    <td class="startD_col">20/10/2021</td>
+                    <td class="endtD_col">20/10/2021</td>
+                    <td class="category_col">Prop</td>
                   </tr>
 
                   <tr>
@@ -560,7 +584,6 @@
                     <td class="type_col">
                       <button class="btn" style="border: 0">Rig</button>
                     </td>
-
                     <td class="design_col">
                       <button class="btn for-review">For Review</button>
                     </td>
@@ -576,12 +599,14 @@
                     <td class="render_col">
                       <button class="btn on-hold">On Hold</button>
                     </td>
-
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td class="lastUD_col">20/10/2021</td>
+                    <td class="startD_col">20/10/2021</td>
+                    <td class="endtD_col">20/10/2021</td>
+                    <td class="category_col">VFX</td>
                   </tr>
 
                   <tr>
@@ -610,10 +635,13 @@
                     </td>
 
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td class="lastUD_col">20/10/2021</td>
+                    <td class="startD_col">20/10/2021</td>
+                    <td class="endtD_col">20/10/2021</td>
+                    <td class="category_col">Character</td>
                   </tr>
 
                   <tr>
@@ -640,12 +668,14 @@
                     <td class="render_col">
                       <button class="btn on-hold">On Hold</button>
                     </td>
-
                     <td class="artist_col">Name artista</td>
-                    <td class="sync_col"><a href="#">Sync review</a></td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
-                    <td>20/10/2021</td>
+                    <td class="sync_col">
+                      <a href="#">Sync review</a>
+                    </td>
+                    <td class="lastUD_col">20/10/2021</td>
+                    <td class="startD_col">20/10/2021</td>
+                    <td class="endtD_col">20/10/2021</td>
+                    <td class="category_col">VFX</td>
                   </tr>
                 </tbody>
               </table>
