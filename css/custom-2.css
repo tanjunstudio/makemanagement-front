@@ -76,7 +76,7 @@
 .lay-box {
   height: 80vh;
   background: white;
-  border-left: 4px solid darkslategray;
+  border-left: 4px solid #232c3d;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   width: 100%;
