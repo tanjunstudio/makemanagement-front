@@ -138,11 +138,11 @@
 
 .btn-text {
   font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    padding-left: 5px;
-    color: black;
-    display: inline-flex;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding-left: 5px;
+  display: inline-flex;
+  color: rgb(0, 0, 0);
 }
 
 .last-btn-text {
